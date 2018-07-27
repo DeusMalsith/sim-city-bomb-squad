@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sim City Bomb Squad</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="bomb.js"></script>
-  </head>
-  <body class="unexploded">
-    <div id="box">
-      <img id="blue" src="./img/uncut-blue-wire.png">
-      <img id="green" src="./img/uncut-green-wire.png">
-      <img id="white" src="./img/uncut-white-wire.png">
-      <img id="red" src="./img/uncut-red-wire.png">
-      <img id="yellow" src="./img/uncut-yellow-wire.png">
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Sim City Bomb Squad</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="unexploded">
+  <div id="box">
+    <img id="blue" src="./img/uncut-blue-wire.png">
+    <img id="green" src="./img/uncut-green-wire.png">
+    <img id="white" src="./img/uncut-white-wire.png">
+    <img id="red" src="./img/uncut-red-wire.png">
+    <img id="yellow" src="./img/uncut-yellow-wire.png">
+    <h2 id="timer">30</h2>
+    <button id="startGame">Start Game</button>
+  </div>
+  <h1 id="message"></h1>
+
+  <audio id="explode" src="./sounds/BldgExplode.wav"></audio>
+  <audio id="siren" src="./sounds/Siren.wav" loop></audio>
+  <audio id="cheer" src="./sounds/CrowdYay.wav"></audio>
+  <audio id="buzz" src="./sounds/Electricity.wav"></audio>
+  <audio id="success" src="./sounds/success.ogg"></audio>
+
+</body>
+
+<script src="bomb.js"></script>
 </html>

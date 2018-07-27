@@ -1,24 +1,39 @@
-body{
+body {
+  background: no-repeat center fixed;
+  background-size: cover;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: 100% 1000px;
 }
-.unexploded{
+
+.unexploded {
   background-image: url("./img/simcity.jpg");
 }
-.exploded{
+
+.exploded {
   background-image: url("./img/explosion.jpg");
 }
-#title{
-  display: none;
-  text-align: center;
-  color: white;
+
+#box {
+  background-color: #333;
+  padding: 20px 10px 30px 10px;
+  display: inline-block;
 }
-#timer{
+
+#timer {
   color: chartreuse;
 }
-#box{
+
+#startGame {
+  font-size: 18px;
+  padding: 15px;
   background-color: black;
-  display: inline-block;
-  padding: 20px 10px 30px 10px;
+  color: white;
+}
+
+#startGame:hover {
+  background-color: black;
+  color: red;
+}
+
+#message {
+  color: black;
 }
